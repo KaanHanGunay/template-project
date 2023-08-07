@@ -82,7 +82,7 @@
                   file="config/liquibase/data/user.csv"
                   separator=";"
                   tableName="jhi_user"
-                  usePreparedStatements="true">
+                  usePreparedStatements="false">
             <column name="id" type="numeric"/>
             <column name="activated" type="boolean"/>
             <column name="created_date" type="timestamp"/>
@@ -92,14 +92,14 @@
                   file="config/liquibase/data/authority.csv"
                   separator=";"
                   tableName="jhi_authority"
-                  usePreparedStatements="true">
+                  usePreparedStatements="false">
             <column name="name" type="string"/>
         </loadData>
         <loadData
                   file="config/liquibase/data/user_authority.csv"
                   separator=";"
                   tableName="jhi_user_authority"
-                  usePreparedStatements="true">
+                  usePreparedStatements="false">
             <column name="user_id" type="numeric"/>
         </loadData>
     </changeSet>
